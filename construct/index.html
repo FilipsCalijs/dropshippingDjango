@@ -1,0 +1,966 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Home - Construction Website</title>
+	<link rel="shortcut icon" type="image/jpg" href="{% static '/images/favicon.png'%}" />
+	<meta charset="UTF-8">
+	<meta name="description" content="HTML Templates">
+	<meta name="keywords" content="Construction,Building,Tools">
+	<meta name="author" content="Pentabay">
+	<meta name="viewport" content="width=device-width">
+	<!-- Icon link -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<!-- Style link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" href="{% static '/css/responsive.css'%}"> </head>
+
+<body>
+	<div id="loading"> <img id="loading-image" src="../construct/assets/images/loader.svg" alt="Loading..." /> </div>
+	<!-- top header start -->
+	<div class="top-header  d-none d-lg-block">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-5 offset-xl-3 col-lg-6 col-md-7 col-12 col-sm-5">
+					<div class="header-top-left"> <span class="d-m-none">
+                                <i class="far fa-envelope"></i>
+                                <a href="#">info@testmail.com</a>
+                            </span> <span class="d-m-none">
+                                <i class="fal fa-phone"></i>
+
+                            </span> </div>
+				</div>
+				<div class="col-xl-4 col-lg-6 col-md-12 col-12 col-sm-12">
+					<div class="header-top-right">
+						<div class="header-top-right-flag f_right">
+							<ul>
+                                <li class="language-dropdown dropdown">
+                                    <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Log In/Register
+                                    <i class="fas fa-arrow-down"></i></a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="./auth/login.html">Log In</a>
+                                        <a class="dropdown-item" href="./auth/register.html">Register</a>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+                            </ul>
+						</div>
+						<div class="header-top-right-social f_right d-md-block">
+							<ul>
+								<li>
+									<a href="#"> <i class="fab fa-facebook-f"></i> </a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-twitter"></i> </a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-instagram"></i> </a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-linkedin"></i> </a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-youtube"></i> </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- top header end -->
+	<!-- main header start -->
+	<div class="penta__header header-menu">
+		<div class="container-fluid  d-none d-lg-block">
+			<div class="row">
+				<div class="col-lg-3 col-8 col-md-5">
+					<div class="header-logo">
+						<a href="../construct/index.html"> <img src="../construct/assets/images/construct-logo.png" alt="logo"> </a>
+					</div>
+				</div>
+				<div class="col-lg-9 d-none d-lg-block">
+					<div class="header-side-btn f-right d-none d-lg-block"> <a href="#getquote" data-toggle="modal" data-target="#getquote">Get A Quote</a> </div>
+					<div class="main-menu">
+						<nav class="main-menu-nav">
+							<ul>
+								<li class="sub-menu-parent" > <a href="../construct/index.html">home</a> </li>
+								<li class="sub-menu-parent" > <a href="../construct/pages/about-us.html">about</a> </li>
+								<li class="sub-menu-parent"><a href="../construct/shop/shop.html">shop</a></li>
+                                <li class="sub-menu-parent"><a href="../construct/pages/fill-products.html">fill-products</a></li>
+                                <li class="sub-menu-parent"><a href="../construct/shop/cart.html">cart</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- main header end -->
+	<!-- mobile header start -->
+	<div class="mobile-header-menu d-lg-none d-block">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-9">
+					<div class="mobile-menu-logo">
+						<a href="../construct/index.html"> <img src="../construct/assets/images/construct-logo.png" alt="logo"> </a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="mobile-menu-toggler">
+						<a href="#" data-toggle="collapse" data-target="#navbar-main"> <i class="fal fa-bars"></i> </a>
+					</div>
+				</div>
+				<div id="navbar-main" class="navbar-collapse mobile-collapse-menu collapse">
+					<div class="mobile-menu-wrapper">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12">
+									<div class="mobile-menu-header">
+										<a href="#" data-toggle="collapse" data-target="#navbar-main">
+                                            <i class="material-icons">close</i>
+                                        </a> <img src="../construct/assets/images/construct-logo.png" alt="img"> </div>
+								</div>
+								<div class="col-12">
+									<ul class="nav navbar-nav navbar-right mobile-menu">
+										<li> <a href="../construct/index.html" class="mobile-menu-link"> home </a> </li>
+										<li> <a href="../construct/pages/about-us.html">about</a> </li>
+										<li class="dropdown"> <a href="../construct/pages/services/services-1.html" class="mobile-menu-link" data-toggle="dropdown">services <i class = "material-icons">add</i></a>
+											<ul class="dropdown-menu">
+												<li><a href="../construct/pages/services/services-1.html">Services 1</a></li>
+												<li><a href="../construct/pages/services/single-service.html">Single Service</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"> <a href="../construct/pages/project.html" class="mobile-menu-link" data-toggle="dropdown">pages <i class = "material-icons">add</i></a>
+											<ul class="dropdown-menu">
+												<li><a href="../construct/pages/project.html">Project</a></li>
+                                                <li><a href="../construct/pages/project-detail.html">Project Detail</a></li>
+												<li><a href="../construct/pages/faq.html">FAQ</a></li>
+												<li><a href="../construct/pages/team.html">Our Team</a></li>
+												<li><a href="../construct/pages/coming-soon.html">Coming Soon</a></li>
+												<li><a href="../construct/pages/error-404.html">404 Page</a></li>
+												<li><a href="../construct/pages/testimonials.html">Testimonials</a></li>
+												<li><a href="../construct/pages/brands.html">Brands</a></li>
+												<li><a href="../construct/pages/terms-conditions.html">Terms & Conditions</a></li>
+												<li><a href="../construct/pages/privacy-policy.html">Privacy Policy</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"> <a href="../construct/pages/news/news-1.html" class="mobile-menu-link" data-toggle="dropdown">news <i class = "material-icons">add</i></a>
+											<ul class="dropdown-menu">
+												<li><a href="../construct/pages/news/news-1.html">News 1</a></li>
+												<li><a href="../construct/pages/news/single-news.html">Single News</a></li>
+											</ul>
+										</li>
+										<li> <a href="../construct/pages/contact-us.html">contact</a> </li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<div class="mobile-menu-contact">
+										<h2 class="mobile-menu-heading">Contact Info</h2>
+										<ul>
+											<li>
+												<a href="#"> <i class="material-icons">map</i> <span>12/A, New Winston Road, New York</span> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="material-icons">phone</i> <span>+123 456 7890</span> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="material-icons">email</i> <span>contact@testmail.com</span> </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-12"> <a href="#" class="quote-btn button">Get a Quote</a> </div>
+								<div class="col-12">
+									<div class="mobile-menu-social-wrapper">
+										<ul>
+											<li>
+												<a href="#"> <i class="fab fa-facebook-f"></i> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="fab fa-twitter"></i> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="fab fa-instagram"></i> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="fab fa-linkedin"></i> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="fab fa-youtube"></i> </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- mobile header end -->
+	<!-- main content wrapper -->
+	<div class="main-content-wrapper">
+		<!-- content section -->
+		<section class="slider-section">
+			<div class="slider-container">
+				<ul class="site-slider">
+					<li>
+						<div class="slider-img"><img src="../construct/assets/images/banner-1.jpg" alt="Sldie 1" /></div>
+						<div class="slider-text">
+							<h3>WE CREATE<br>SPACE FOR LIFE
+                      </h3>
+							<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></p>
+							<div class="banner-btns"> <a href="../construct/pages/about-us.html" class="banner-learn-btn">learn more</a> <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get a quote</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img"><img src="../construct/assets/images/banner-2.jpg" alt="Sldie 2" /></div>
+						<div class="slider-text">
+							<h3>WE CREATE<br>SPACE FOR LIFE
+                        </h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></p>
+                        <div class="banner-btns"> <a href="../construct/pages/about-us.html" class="banner-learn-btn">learn more</a> <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get a quote</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img"><img src="../construct/assets/images/banner-3.jpg" alt="Sldie 3" /></div>
+						<div class="slider-text">
+							<h3>WE CREATE<br>SPACE FOR LIFE
+                        </h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></p>
+                        <div class="banner-btns"> <a href="../construct/pages/about-us.html" class="banner-learn-btn">learn more</a> <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get a quote</a> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- aboutus start -->
+		<section class="home-aboutus">
+			<div class="top-tab-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="nav-tab-block">
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="who-we-tab" data-toggle="tab" href="#who-we" role="tab" aria-controls="who-we" aria-selected="true">
+										<div class="tab-info-block">
+											<div class="tab-info-icon"> <img src="../construct/assets/images/who-we-are.png" alt="img"> </div>
+											<div class="tab-info-text">
+												<h2>who we are</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+									<a class="nav-item nav-link" id="our-mission-tab" data-toggle="tab" href="#our-mission" role="tab" aria-controls="our-mission" aria-selected="false">
+										<div class="tab-info-block">
+											<div class="tab-info-icon"> <img src="../construct/assets/images/our-mission.png" alt="img"> </div>
+											<div class="tab-info-text">
+												<h2>our mission</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+									<a class="nav-item nav-link" id="what-we-tab" data-toggle="tab" href="#what-we" role="tab" aria-controls="what-we" aria-selected="false">
+										<div class="tab-info-block">
+											<div class="tab-info-icon"> <img src="../construct/assets/images/what-we-have.png" alt="img"> </div>
+											<div class="tab-info-text">
+												<h2>what we have</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+									<a class="nav-item nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab" aria-controls="safety" aria-selected="false">
+										<div class="tab-info-block">
+											<div class="tab-info-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+											<div class="tab-info-text">
+												<h2>safety first</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-6 col-md-6">
+							<div class="about-info-left">
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="who-we" role="tabpanel" aria-labelledby="who-we-tab">
+										<div class="tab-content-wrapper"> <img src="../construct/assets/images/who-we-are.png" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+									<div class="tab-pane fade" id="our-mission" role="tabpanel" aria-labelledby="our-mission-tab">
+										<div class="tab-content-wrapper"> <img src="../construct/assets/images/our-mission.png" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+									<div class="tab-pane fade" id="what-we" role="tabpanel" aria-labelledby="what-we-tab">
+										<div class="tab-content-wrapper"> <img src="../construct/assets/images/what-we-have.png" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+									<div class="tab-pane fade" id="safety" role="tabpanel" aria-labelledby="safety-tab">
+										<div class="tab-content-wrapper"> <img src="../construct/assets/images/safety.png" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6">
+							<div class="about-home-right-info">
+								<h3 class="sub-heading-small">About Us</h3>
+								<h2 class="main-heading">Standing on pure<br> Need & Dope</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d olor in reprehenderit in voluptate velit esse cillum dolore. </p> <a class="learn-more-btn" href="../construct/pages/about-us.html">Learn More</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- aboutus end -->
+		<!-- features start -->
+		<section class="section">
+			<div class="home-feature-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="home-feature-box-wrapper">
+								<h3 class="sub-heading-small">core feature</h3>
+								<h2 class="main-heading">Build services for<br> developers</h2>
+								<div class="home-feature-list">
+									<div class="home-feature-listitem">
+										<div class="feature-list-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+										<div class="feature-list-info">
+											<h2 class="sub-heading-medium">Real & Pure Steel</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+										</div>
+									</div>
+									<div class="home-feature-listitem">
+										<div class="feature-list-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+										<div class="feature-list-info">
+											<h2 class="sub-heading-medium">expert worker</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+										</div>
+									</div>
+								</div> <a href="../construct/pages/services/services-1.html" class="learn-more-btn m-25px-t">learn more</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- feature end -->
+		<!-- services start -->
+		<section class="section">
+			<div class="container">
+				<div class="row row-eq-height">
+					<div class="col-12">
+						<div class="main-heading-block">
+							<h2 class="main-heading">our special services</h2> </div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="sinfo-more-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+								<div class="sinfo-more-content">
+									<h2 class="sub-heading-medium-camel">Apartment Design</h2>
+									<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+							</div>
+						</div>
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="services-info-more-inner">
+									<div class="sinfo-more-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+									<div class="sinfo-more-content">
+										<h2 class="sub-heading-medium-camel">Expert Mechanical</h2>
+										<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="services-info-wrapper">
+							<div class="services-inner-box">
+								<div class="services-inner-icon"> <i class="material-icons"><span class="material-icons-outlined">
+                                        miscellaneous_services
+                                        </span></i> </div>
+								<h3>Provide Variety</h3>
+								<h3>Construction Services</h3>
+								<div class="services-inner-discount">
+									<p>Discount 25%</p>
+									<h3>Restructure Services</h3> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="sinfo-more-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+								<div class="sinfo-more-content">
+									<h2 class="sub-heading-medium-camel">Apartment Design</h2>
+									<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+							</div>
+						</div>
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="services-info-more-inner">
+									<div class="sinfo-more-icon"> <img src="../construct/assets/images/safety.png" alt="img"> </div>
+									<div class="sinfo-more-content">
+										<h2 class="sub-heading-medium-camel">Expert Mechanical</h2>
+										<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- services end -->
+		<!-- latest project start -->
+		<section class="section latest-project-bg">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-7">
+						<div class="main-heading-block">
+							<h2 class="main-heading white-color">our latest projects</h2>
+							<p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="latest-project-wrapper">
+							<!-- Project Carousel -->
+							<div class="latest-project">
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div> <img class="content-image" src="../construct/assets/images/img/project-1.jpg" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div> <img class="content-image" src="../construct/assets/images/img/project-2.jpg" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div> <img class="content-image" src="../construct/assets/images/img/project-3.jpg" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div> <img class="content-image" src="../construct/assets/images/img/project-4.jpg" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- latest project end -->
+		<!-- small contactus bar start -->
+		<section class="contactus-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8 display-flex align-item-center">
+						<div class="contactus-bar-text">
+							<h2>LOOKING AN ADAQUATE SOLUTION FOR YOUUR PROJECT</h2>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="contactus-bar-button-block"> <a href="../construct/pages/contact-us.html" class="contactus-bar-btn">contact us</a> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- small contactus bar end -->
+		<!-- special project info start -->
+		<section class="section">
+			<div class="container">
+				<div class="row row-eq-height">
+					<div class="col-12 col-lg-6 col-md-6 item">
+						<div class="special-project-info-img"> <img src="../construct/assets/images/img/project-management-1.jpg" alt="img"> </div>
+					</div>
+					<div class="col-12 col-lg-6 col-md-6">
+						<div class="special-project-info-wrapper">
+							<h3>lorem ipsum doller</h3>
+							<h2>Full Project Management</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut en im ad minim veniam, quis nostrud.</p> <a href="../construct/pages/project-detail.html" class="special-project-know-btn">know more</a> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<div class="row row-eq-height">
+					<div class="col-12 col-lg-6 col-md-6 item">
+						<div class="special-project-info-wrapper flex-end">
+							<h3>lorem ipsum doller</h3>
+							<h2>Full Project Management</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut en im ad minim veniam, quis nostrud.</p> <a href="../construct/pages/project-detail.html" class="special-project-know-btn">know more</a> </div>
+					</div>
+					<div class="col-12 col-lg-6 col-md-6">
+						<div class="special-project-info-img"> <img src="../construct/assets/images/img/project-managenent-2.jpg" alt="img"> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- special project info end -->
+		<!-- counter start -->
+		<section class="section counter-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>100+</h3> </div>
+							<h2 class="count-info-name">Project done</h2> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>90</h3> </div>
+							<h2 class="count-info-name">Happy clients</h2> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>50</h3> </div>
+							<h2 class="count-info-name">completed co.</h2> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>50+</h3> </div>
+							<h2 class="count-info-name">country cover</h2> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- counterr end -->
+		<!-- experts start -->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="main-heading-block">
+							<h2 class="main-heading">our best experts</h2> </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../construct/assets/images/our-team-1.jpg" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Alex Greenfield</h2>
+								<p>Programming Guru</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../construct/assets/images/our-team-2.jpg" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Jeffery Brown</h2>
+								<p>Creative Leader</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../construct/assets/images/our-team-3.jpg" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Ann Richmond</h2>
+								<p>Manager</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../construct/assets/images/our-team-4.jpg" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Richard Nicholas</h2>
+								<p>Manager</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- experts end -->
+		<!-- latest news start -->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="main-heading-block">
+							<h2 class="main-heading">latest news & blog</h2> </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-6 item">
+						<div class="construction-news-wrapper">
+							<div class="construction-news-img"> <img src="../construct/assets/images/img/news-1.jpg" alt="img">
+								<div class="date-box">
+									<p>17</p>
+									<p>APR</p>
+								</div>
+							</div>
+							<div class="construction-new-info">
+								<h2>Commercial Design For Project</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+							</div>
+							<div class="construction-news-action">
+								<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comments</span> </div>
+								<div class="connews-action-box"> <i class="material-icons">person</i> <span>Alex</span> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 item">
+						<div class="construction-news-wrapper">
+							<div class="consnews-right-img">
+								<div class="construction-news-img"> <img src="../construct/assets/images/img/news-2.jpg" alt="img">
+									<div class="date-box">
+										<p>17</p>
+										<p>APR</p>
+									</div>
+								</div>
+							</div>
+							<div class="consnews-right-info">
+								<div class="construction-new-info">
+									<h2>Commercial Design For Project</h2> </div>
+								<div class="construction-news-action">
+									<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comments</span> </div>
+									<div class="connews-action-box"> <i class="material-icons">person</i> <span>Alex</span> </div>
+								</div>
+								<div class="construction-new-info">
+									<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="construction-news-wrapper">
+							<div class="consnews-right-img">
+								<div class="construction-news-img"> <img src="../construct/assets/images/img/news-3.jpg" alt="img">
+									<div class="date-box">
+										<p>17</p>
+										<p>APR</p>
+									</div>
+								</div>
+							</div>
+							<div class="consnews-right-info">
+								<div class="construction-new-info">
+									<h2>Commercial Design For Project</h2> </div>
+								<div class="construction-news-action">
+									<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comments</span> </div>
+									<div class="connews-action-box"> <i class="material-icons">person</i> <span>Alex</span> </div>
+								</div>
+								<div class="construction-new-info">
+									<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- latest news end -->
+		<!-- content section end -->
+	</div>
+	<!-- footer start -->
+	<footer>
+		<div class="footer-top">
+			<div class="container-fluid">
+				<div class="row align-item-center">
+					<div class="col-lg-3 col-md-3">
+						<div class="footer-logo">
+							<a href="../construct/index.html"> <img src="../construct/assets/images/construct-logo-white.png" alt="footer-logo"> </a>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9">
+						<div class="row">
+							<div class="col-lg-6 col-md-7">
+								<div class="footer-top-right-info">
+									<div class="footer-top-info-icon"> <span><i class="fas fa-envelope-open-text"></i></span> </div>
+									<div class="footer-top-info-text">
+										<h2>Subscribe To Our Newsletter</h2>
+										<p>Stay in touch with us to get latest news and discount coupons.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-5 footer-form">
+								<div class="footer-top-right-form">
+									<form>
+										<input id="txtEmail" class="subscribe-input" type="text" placeholder="Email" required>
+										<button id="demo" type="button" class="submit-btn-btn"><i class="fa fa-envelope"></i></button>
+									</form>
+								</div>
+								<div class="error-msg" id="error">
+									<p>Invalid email address</p>
+								</div>
+								<div class="success-msg" id="success">
+									<p><span class="check-success-icon"><i class="fa fa-check"></i></span>Sent Successfully!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="footer-block-list">
+							<h2 class="footer-middle-heading">About Us</h2>
+							<p class="footer-middle-text">Lorem ipsum dolort amet, consectetur adipimag A ms pum sociis natoque penatibus.A ms pum sociis natoque penatibus.</p>
+							<h2 class="footer-middle-heading">Get Free Estimate</h2>
+							<p class="footer-middle-text">Our online scheduling and payment system is safe.</p> <a href="#" class="footer-request-btn">Request with Online Form</a> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="footer-block-list">
+							<h2 class="footer-middle-heading">Useful Links</h2>
+							<div class="footer-menu-list-wrapper">
+								<ul class="footer-menu-list">
+									<li> <a href="../construct/index.html">Home</a> </li>
+									<li> <a href="../construct/pages/services/services-1.html">Services</a> </li>
+									<li> <a href="../construct/pages/about-us.html">About</a> </li>
+									<li> <a href="../construct/pages/project.html">Project</a> </li>
+									<li> <a href="../construct/pages/team.html">Our Team</a> </li>
+									<li> <a href="../construct/pages/coming-soon.html">Coming Soon</a> </li>
+								</ul>
+								<ul class="footer-menu-list">
+									<li> <a href="../construct/pages/faq.html">FAQ</a> </li>
+									<li> <a href="../construct/pages/error-404.html">404 Error</a> </li>
+									<li> <a href="../construct/pages/testimonials.html">Testimonials</a> </li>
+									<li> <a href="../construct/pages/brands.html">Brands</a> </li>
+									<li> <a href="../construct/pages/services/single-service.html">Single Service</a> </li>
+									<li> <a href="../construct/pages/news/single-news.html">Single News</a> </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="footer-block-list">
+							<h2 class="footer-middle-heading">Contact Us</h2>
+							<div class="footercontact-list-item">
+								<div class="footercontact-list-icon"> <i class="fas fa-map-marked-alt"></i> </div>
+								<div class="footercontact-list-info">
+									<h2>OFFICIAL ADDRESS</h2>
+									<p>47 Anytown RUE
+										<br> 01234 Anyville
+										<br> France</p>
+								</div>
+							</div>
+							<div class="footercontact-list-item">
+								<div class="footercontact-list-icon"> <i class="fas fa-phone-alt"></i> </div>
+								<div class="footercontact-list-info">
+									<h2>contact details</h2>
+									<p><a href="#">+123 456 7890</a>
+										<br> <a href="#">contact@construction.com</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="footer-block-list">
+							<h2 class="footer-middle-heading">Recent Post</h2>
+							<div class="footer-post-list">
+								<div class="footer-post-icon"> <img src="../construct/assets/images/img/news-1.jpg" alt="img"> </div>
+								<div class="footer-post-info">
+									<h2>Our Biggest Summer Meetup</h2>
+									<p>May 1,2020</p>
+								</div>
+							</div>
+							<div class="footer-post-list p-20px-t">
+								<div class="footer-post-icon"> <img src="../construct/assets/images/img/news-2.jpg" alt="img"> </div>
+								<div class="footer-post-info">
+									<h2>Our Biggest Summer Meetup</h2>
+									<p>May 1,2020</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-lg-6 col-md-6">
+						<p>Copyright © 2019 Construction. All rights reserved.</p>
+					</div>
+					<div class="col-12 col-lg-6 col-md-6">
+						<div class="terms-policy">
+							<span><a class="divide-icon" href="../construct/pages/terms-conditions.html">Terms & Conditions</a></span>
+							<span><a href="../construct/pages/privacy-policy.html">Privacy Policy</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Modal -->
+    <div class="modal fade quote" id="getquote" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="sub-heading-medium m-15px-b">Request Quote</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="quote-form-wrapper">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-input" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="quote-form-wrapper">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-input" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="quote-form-wrapper">
+                                    <label class="form-label">Phone</label>
+                                    <input type="text" class="form-input" placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="quote-form-wrapper">
+                                    <label class="form-label">Services</label>
+                                    <select class="form-input" required>
+                                        <option>Select Your Service</option>
+                                        <option>Architecture</option>
+                                        <option>Renovation</option>
+                                        <option>Construction</option>
+                                        <option>Interior & Rxterior</option>
+                                        <option>Other services</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="quote-form-wrapper">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-input-textarea" rows="4" placeholder="Your Message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="request-quote-btn">request a quote</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- footer end --><a href="#" class="back-to-top"><i class="material-icons">expand_less</i></a>
+	<!-- Script tag -->
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="../construct/assets/js/main.js"></script>
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            if (window.location.hash == "#getquote") $('#getquote').modal('show');
+        });
+    </script>
+</body>
+
+</html>
