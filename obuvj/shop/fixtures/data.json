@@ -1,0 +1,228 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$hlF7AOECmI2IaBv1DUVnRE$b9hw6tUGKUpaEba1QQpNAIKDXCJ3k6xfuL5CBnZbAZ4=",
+            "last_login": "2022-04-13T23:19:10.926Z",
+            "is_superuser": true,
+            "username": "root",
+            "first_name": "",
+            "last_name": "",
+            "email": "root@root.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-04-13T23:16:50.486Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 1,
+        "fields": {
+            "name": "Труба профильная 40х20 2 мм 3м",
+            "code": "38140012",
+            "price": "643.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/30C39890-D527-427E-B573-504969456BF5.jpg.webp?16447415922026",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "name": "Труба профильная 40х40 2 мм 3м",
+            "code": "38140013",
+            "price": "904.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/4FE3D9DF-01B8-4B17-8DBE-887E5F3E00DC.jpg.webp?16447415921832",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 3,
+        "fields": {
+            "name": "Труба профильная 80х40 3мм 3м",
+            "code": "38140010",
+            "price": "2045.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_2/47662A68-CD74-4A06-8F34-C24349F6C66D.jpg.webp?16389315444348",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 4,
+        "fields": {
+            "name": "Труба профильная 100х100 3мм 3м",
+            "code": "38140008",
+            "price": "3235.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/2F43E303-712F-4B07-8FFF-3A8CA38EC552.jpg.webp?16389315441492",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 5,
+        "fields": {
+            "name": "Труба профильная 80х80 3мм 3м",
+            "code": "38140011",
+            "price": "1889.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/DE97F148-D71A-4536-921E-17F95289F5F3.jpg.webp?16389315441492",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 6,
+        "fields": {
+            "name": "Труба профильная 100х50 3мм 3м",
+            "code": "38140009",
+            "price": "2648.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_2/290B3294-CCF2-4580-BBE0-9428F7754E0D.jpg.webp?16389235774348",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 7,
+        "fields": {
+            "name": "Уголок профильный 32x32х4мм 3м",
+            "code": "38140004",
+            "price": "570.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/34B819E2-7CC5-4A62-BC28-86DDB7B8EE10.jpg.webp?16389315441308",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 8,
+        "fields": {
+            "name": "Уголок профильный 63х63х5мм 3м",
+            "code": "38140007",
+            "price": "1713.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/77AEAF82-F110-45A6-8E7B-1133657AD74F.jpg.webp?16389315441308",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 9,
+        "fields": {
+            "name": "Уголок профильный 25x25х4мм 3м",
+            "code": "38140003",
+            "price": "476.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/4461542B-316B-4350-8120-A73059DF240E.jpg.webp?16389315441308",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 10,
+        "fields": {
+            "name": "Уголок профильный 50x50х4мм 3м",
+            "code": "38140006",
+            "price": "965.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/66A00FB1-D744-446A-BCA7-28609C3F69BF.jpg.webp?16389315441308",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 11,
+        "fields": {
+            "name": "Уголок профильный 40x40х4мм 3м",
+            "code": "38140005",
+            "price": "814.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/8DBF1EBF-C630-4751-827A-C75F0BC987F4.jpg.webp?16389315441308",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 12,
+        "fields": {
+            "name": "Труба профильная 60х60 2мм 3м",
+            "code": "38140002",
+            "price": "1537.00",
+            "unit": "за шт",
+            "image_url": "https://www.stroysa.tomsk.ru/upload/delight.webpconverter/upload/resize_cache/pictures/150_150_0/016D9C55-F7B3-4E6E-ACA2-76515958E94F.jpg.webp?16389315441510",
+            "note": null
+        }
+    },
+    {
+        "model": "shop.payment",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "amount": "10000.00",
+            "time": "2022-04-14T19:55:28.285Z",
+            "comment": ""
+        }
+    },
+    {
+        "model": "shop.payment",
+        "pk": 6,
+        "fields": {
+            "user": 1,
+            "amount": "2000.00",
+            "time": "2022-04-14T19:55:35.644Z",
+            "comment": ""
+        }
+    },
+    {
+        "model": "shop.payment",
+        "pk": 12,
+        "fields": {
+            "user": 1,
+            "amount": "1000.00",
+            "time": "2022-04-14T20:03:07.506Z",
+            "comment": ""
+        }
+    },
+    {
+        "model": "shop.order",
+        "pk": 11,
+        "fields": {
+            "user": 1,
+            "status": "2_waiting_for_payment",
+            "amount": "13556.00",
+            "creation_time": "2022-04-14T20:02:26.403Z",
+            "payment": null,
+            "comment": ""
+        }
+    },
+    {
+        "model": "shop.orderitem",
+        "pk": 16,
+        "fields": {
+            "order": 11,
+            "product": 1,
+            "quantity": 2,
+            "price": "643.00",
+            "discount": "0.00"
+        }
+    },
+    {
+        "model": "shop.orderitem",
+        "pk": 17,
+        "fields": {
+            "order": 11,
+            "product": 3,
+            "quantity": 6,
+            "price": "2045.00",
+            "discount": "0.00"
+        }
+    }
+]

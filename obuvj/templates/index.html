@@ -1,0 +1,565 @@
+{% extends 'base-page.html' %}
+{% load static %}
+
+{% block title %}
+    Home - Construction Website
+{% endblock title %}
+
+{% block container %}
+	<!-- main content wrapper -->
+	<div class="main-content-wrapper">
+		<!-- content section -->
+		<section class="slider-section">
+			<div class="slider-container">
+				<ul class="site-slider">
+					<li>
+						<div class="slider-img"><img src="{% static '/images/banner-1.jpg' %}" alt="Sldie 1" /></div>
+						<div class="slider-text">
+							<h3>WE CREATE<br>SPACE FOR LIFE
+                      </h3>
+							<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></p>
+							<div class="banner-btns"> <a href="../construct/pages/about-us.html" class="banner-learn-btn">learn more</a> <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get a quote</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img"><img src="{% static '/images/banner-2.jpg' %}" alt="Sldie 2" /></div>
+						<div class="slider-text">
+							<h3>WE CREATE<br>SPACE FOR LIFE
+                        </h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></p>
+                        <div class="banner-btns"> <a href="../construct/pages/about-us.html" class="banner-learn-btn">learn more</a> <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get a quote</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img"><img src=".{% static '/images/banner-3.jpg' %}" alt="Sldie 3" /></div>
+						<div class="slider-text">
+							<h3>WE CREATE<br>SPACE FOR LIFE
+                        </h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></p>
+                        <div class="banner-btns"> <a href="../construct/pages/about-us.html" class="banner-learn-btn">learn more</a> <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get a quote</a> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- aboutus start -->
+		<section class="home-aboutus">
+			<div class="top-tab-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="nav-tab-block">
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="who-we-tab" data-toggle="tab" href="#who-we" role="tab" aria-controls="who-we" aria-selected="true">
+										<div class="tab-info-block">
+											<div class="tab-info-icon">
+                                                <img src=".{% static '/images/who-we-are.png' %}" alt="img">
+                                            </div>
+											<div class="tab-info-text">
+												<h2>who we are</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+									<a class="nav-item nav-link" id="our-mission-tab" data-toggle="tab" href="#our-mission" role="tab" aria-controls="our-mission" aria-selected="false">
+										<div class="tab-info-block">
+											<div class="tab-info-icon">
+                                                <img src=".{% static '/images/our-mission.png' %}" alt="img">
+                                            </div>
+											<div class="tab-info-text">
+												<h2>our mission</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+									<a class="nav-item nav-link" id="what-we-tab" data-toggle="tab" href="#what-we" role="tab" aria-controls="what-we" aria-selected="false">
+										<div class="tab-info-block">
+											<div class="tab-info-icon">
+                                                <img src="{% static '/images/what-we-have.png' %}" alt="img">
+                                            </div>
+											<div class="tab-info-text">
+												<h2>what we have</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+									<a class="nav-item nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab" aria-controls="safety" aria-selected="false">
+										<div class="tab-info-block">
+											<div class="tab-info-icon">
+                                                <img src="{% static '/images/safety.png' %}" alt="img">
+                                            </div>
+											<div class="tab-info-text">
+												<h2>safety first</h2>
+												<p>Lorem Ipsum is dummy</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-6 col-md-6">
+							<div class="about-info-left">
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="who-we" role="tabpanel" aria-labelledby="who-we-tab">
+										<div class="tab-content-wrapper"> <img src="{% static '/images/who-we-are.png' %}" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+									<div class="tab-pane fade" id="our-mission" role="tabpanel" aria-labelledby="our-mission-tab">
+										<div class="tab-content-wrapper"> <img src="{% static '/images/our-mission.png' %}" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+									<div class="tab-pane fade" id="what-we" role="tabpanel" aria-labelledby="what-we-tab">
+										<div class="tab-content-wrapper"> <img src="{% static '/images/what-we-have.png' %}" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+									<div class="tab-pane fade" id="safety" role="tabpanel" aria-labelledby="safety-tab">
+										<div class="tab-content-wrapper"> <img src="{% static '/images/safety.png' %}" alt="img">
+											<h2>ANY KIND PROJECT PLANNING</h2> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6">
+							<div class="about-home-right-info">
+								<h3 class="sub-heading-small">About Us</h3>
+								<h2 class="main-heading">Standing on pure<br> Need & Dope</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d olor in reprehenderit in voluptate velit esse cillum dolore. </p> <a class="learn-more-btn" href="../construct/pages/about-us.html">Learn More</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- aboutus end -->
+		<!-- features start -->
+		<section class="section">
+			<div class="home-feature-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="home-feature-box-wrapper">
+								<h3 class="sub-heading-small">core feature</h3>
+								<h2 class="main-heading">Build services for<br> developers</h2>
+								<div class="home-feature-list">
+									<div class="home-feature-listitem">
+										<div class="feature-list-icon"> <img src="{% static '/images/safety.png' %}" alt="img"> </div>
+										<div class="feature-list-info">
+											<h2 class="sub-heading-medium">Real & Pure Steel</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+										</div>
+									</div>
+									<div class="home-feature-listitem">
+										<div class="feature-list-icon"> <img src="{% static '/images/safety.png' %}" alt="img"> </div>
+										<div class="feature-list-info">
+											<h2 class="sub-heading-medium">expert worker</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+										</div>
+									</div>
+								</div> <a href="../construct/pages/services/services-1.html" class="learn-more-btn m-25px-t">learn more</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- feature end -->
+		<!-- services start -->
+		<section class="section">
+			<div class="container">
+				<div class="row row-eq-height">
+					<div class="col-12">
+						<div class="main-heading-block">
+							<h2 class="main-heading">our special services</h2> </div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="sinfo-more-icon"> <img src="{% static '/images/safety.png" alt="img' %}"> </div>
+								<div class="sinfo-more-content">
+									<h2 class="sub-heading-medium-camel">Apartment Design</h2>
+									<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+							</div>
+						</div>
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="services-info-more-inner">
+									<div class="sinfo-more-icon"> <img src="{% static '/images/safety.png' %}" alt="img"> </div>
+									<div class="sinfo-more-content">
+										<h2 class="sub-heading-medium-camel">Expert Mechanical</h2>
+										<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="services-info-wrapper">
+							<div class="services-inner-box">
+								<div class="services-inner-icon"> <i class="material-icons"><span class="material-icons-outlined">
+                                        miscellaneous_services
+                                        </span></i> </div>
+								<h3>Provide Variety</h3>
+								<h3>Construction Services</h3>
+								<div class="services-inner-discount">
+									<p>Discount 25%</p>
+									<h3>Restructure Services</h3> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="sinfo-more-icon"> <img src="{% static '/images/safety.png' %}" alt="img"> </div>
+								<div class="sinfo-more-content">
+									<h2 class="sub-heading-medium-camel">Apartment Design</h2>
+									<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+							</div>
+						</div>
+						<div class="services-info-more-wrapper">
+							<div class="services-info-more-inner">
+								<div class="services-info-more-inner">
+									<div class="sinfo-more-icon"> <img src="{% static '/images/safety.png' %}" alt="img"> </div>
+									<div class="sinfo-more-content">
+										<h2 class="sub-heading-medium-camel">Expert Mechanical</h2>
+										<p>Get exterior design ideas for your modern house elevation with our 50 unique modern house facades.</p> <a href="../construct/pages/services/services-1.html" class="services-more"><i class="material-icons">arrow_forward</i></a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- services end -->
+		<!-- latest project start -->
+		<section class="section latest-project-bg">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-7">
+						<div class="main-heading-block">
+							<h2 class="main-heading white-color">our latest projects</h2>
+							<p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="latest-project-wrapper">
+							<!-- Project Carousel -->
+							<div class="latest-project">
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div>
+                                            <img class="content-image" src="{% static '/images/img/project-1.jpg' %}" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div>
+                                            <img class="content-image" src="{% static '/images/img/project-2.jpg' %}" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div>
+                                            <img class="content-image" src="{% static '/images/img/project-3.jpg' %}" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+								<!-- Project -->
+								<div>
+									<div class="box">
+										<div class="content">
+											<div class="content-overlay"></div>
+                                            <img class="content-image" src="{% static '/images/img/project-4.jpg' %}" alt="project">
+											<div class="content-details fadeIn-bottom">
+												<h3 class="content-title">Five-star Construction</h3>
+												<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> <a href="../construct/pages/project-detail.html" class="learn-more-project-btn">learn more</a> </div>
+										</div>
+									</div>
+								</div>
+								<!-- / Project -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- latest project end -->
+		<!-- small contactus bar start -->
+		<section class="contactus-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8 display-flex align-item-center">
+						<div class="contactus-bar-text">
+							<h2>LOOKING AN ADAQUATE SOLUTION FOR YOUUR PROJECT</h2>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="contactus-bar-button-block"> <a href="../construct/pages/contact-us.html" class="contactus-bar-btn">contact us</a> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- small contactus bar end -->
+		<!-- special project info start -->
+		<section class="section">
+			<div class="container">
+				<div class="row row-eq-height">
+					<div class="col-12 col-lg-6 col-md-6 item">
+						<div class="special-project-info-img"> <img src="{% static '/images/img/project-management-1.jpg' %}" alt="img"> </div>
+					</div>
+					<div class="col-12 col-lg-6 col-md-6">
+						<div class="special-project-info-wrapper">
+							<h3>lorem ipsum doller</h3>
+							<h2>Full Project Management</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut en im ad minim veniam, quis nostrud.</p> <a href="../construct/pages/project-detail.html" class="special-project-know-btn">know more</a> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<div class="row row-eq-height">
+					<div class="col-12 col-lg-6 col-md-6 item">
+						<div class="special-project-info-wrapper flex-end">
+							<h3>lorem ipsum doller</h3>
+							<h2>Full Project Management</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut en im ad minim veniam, quis nostrud.</p> <a href="../construct/pages/project-detail.html" class="special-project-know-btn">know more</a> </div>
+					</div>
+					<div class="col-12 col-lg-6 col-md-6">
+						<div class="special-project-info-img"> <img src="{% static '/images/img/project-managenent-2.jpg' %}" alt="img"> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- special project info end -->
+		<!-- counter start -->
+		<section class="section counter-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>100+</h3> </div>
+							<h2 class="count-info-name">Project done</h2> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>90</h3> </div>
+							<h2 class="count-info-name">Happy clients</h2> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>50</h3> </div>
+							<h2 class="count-info-name">completed co.</h2> </div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="company-counter-wrapper">
+							<div class="count-number-box">
+								<h3>50+</h3> </div>
+							<h2 class="count-info-name">country cover</h2> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- counterr end -->
+		<!-- experts start -->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="main-heading-block">
+							<h2 class="main-heading">our best experts</h2> </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div>
+                                <img class="content-experts-image" src="{% static '/images/our-team-1.jpg' %}" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Alex Greenfield</h2>
+								<p>Programming Guru</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div>
+                                <img class="content-experts-image" src="{% static '/images/our-team-2.jpg' %}" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Jeffery Brown</h2>
+								<p>Creative Leader</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div>
+                                <img class="content-experts-image" src="{% static '/images/our-team-3.jpg' %}" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Ann Richmond</h2>
+								<p>Manager</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3 col-md-6 item">
+						<div class="experts-info-wrapper">
+							<div class="content-experts">
+								<div class="content-experts-overlay"></div>
+                                <img class="content-experts-image" src="{% static '/images/our-team-4.jpg' %}" alt="team">
+								<div class="content-experts-details fadeIn-bottom">
+									<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-expert-info">
+								<h2>Richard Nicholas</h2>
+								<p>Manager</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- experts end -->
+		<!-- latest news start -->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="main-heading-block">
+							<h2 class="main-heading">latest news & blog</h2> </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-6 item">
+						<div class="construction-news-wrapper">
+							<div class="construction-news-img"> <img src="{% static '/images/img/news-1.jpg' %}" alt="img">
+								<div class="date-box">
+									<p>17</p>
+									<p>APR</p>
+								</div>
+							</div>
+							<div class="construction-new-info">
+								<h2>Commercial Design For Project</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+							</div>
+							<div class="construction-news-action">
+								<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comments</span> </div>
+								<div class="connews-action-box"> <i class="material-icons">person</i> <span>Alex</span> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 item">
+						<div class="construction-news-wrapper">
+							<div class="consnews-right-img">
+								<div class="construction-news-img"> <img src="{% static '/images/img/news-2.jpg' %}" alt="img">
+									<div class="date-box">
+										<p>17</p>
+										<p>APR</p>
+									</div>
+								</div>
+							</div>
+							<div class="consnews-right-info">
+								<div class="construction-new-info">
+									<h2>Commercial Design For Project</h2> </div>
+								<div class="construction-news-action">
+									<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comments</span> </div>
+									<div class="connews-action-box"> <i class="material-icons">person</i> <span>Alex</span> </div>
+								</div>
+								<div class="construction-new-info">
+									<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="construction-news-wrapper">
+							<div class="consnews-right-img">
+								<div class="construction-news-img"> <img src="{% static '/images/img/news-3.jpg' %}" alt="img">
+									<div class="date-box">
+										<p>17</p>
+										<p>APR</p>
+									</div>
+								</div>
+							</div>
+							<div class="consnews-right-info">
+								<div class="construction-new-info">
+									<h2>Commercial Design For Project</h2> </div>
+								<div class="construction-news-action">
+									<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comments</span> </div>
+									<div class="connews-action-box"> <i class="material-icons">person</i> <span>Alex</span> </div>
+								</div>
+								<div class="construction-new-info">
+									<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- latest news end -->
+		<!-- content section end -->
+	</div>
+    {% endblock container %}
