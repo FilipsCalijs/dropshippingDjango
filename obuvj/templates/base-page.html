@@ -101,7 +101,9 @@
 								<li class="sub-menu-parent" > <a href="/">home</a> </li>
 								<li class="sub-menu-parent" > <a href="{% url 'about' %}">about</a> </li>
 								<li class="sub-menu-parent"><a href="../construct/shop/shop.html">shop</a></li>
-                                <li class="sub-menu-parent"><a href="../construct/pages/fill-products.html">fill-products</a></li>
+								{% if user.is_staff %}
+                                <li class="sub-menu-parent"><a href="{%url 'fill_database'%}">fill-products</a></li>
+								{% endif %}
                                 <li class="sub-menu-parent"><a href="../construct/shop/cart.html">cart</a></li>
 							</ul>
 						</nav>

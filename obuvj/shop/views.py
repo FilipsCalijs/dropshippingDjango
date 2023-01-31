@@ -1,3 +1,14 @@
 from django.shortcuts import render
 
-# Create your views here.
+from shop.scraping import scraping, ScrapingError
+
+
+def fill_database(request):
+    if request.method == 'POST' and request.user.is_staff:
+        try:
+            scraping()
+        except ScrapingError as err:
+            print(str(err))
+            return render(request, 'shop/fill-products.html', {'message': str(err)})
+
+    return render(request, 'shop/fill-products.html', {'message': None})

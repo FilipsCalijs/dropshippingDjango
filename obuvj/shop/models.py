@@ -7,6 +7,8 @@ from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from django.utils import timezone
 
+
+
 class Product(models.Model):
     name = models.CharField(max_length=255, verbose_name='product_name')
     code = models.CharField(max_length=255, verbose_name='product_code')
@@ -19,7 +21,8 @@ class Product(models.Model):
         ordering = ['pk']
 
     def __str__(self):
-        return f'{self.name}- {self.price}'
+        return f'{self.name} - {self.price}'
+
 
 class Payment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -31,12 +34,13 @@ class Payment(models.Model):
         ordering = ['pk']
 
     def __str__(self):
-        return f'{self.user} --- {self.amount}'
+        return f'{self.user} - {self.amount}'
 
     @staticmethod
     def get_balance(user: User):
         amount = Payment.objects.filter(user=user).aggregate(Sum('amount'))['amount__sum']
         return amount or Decimal(0)
+
 
 
 class Order(models.Model):
